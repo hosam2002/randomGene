@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Generate Random Password">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+        <title>PASSWORD GENERATOR</title>
+    </head>
+
+    <body>
+        <div class="calculator-body">
+
+            <div class="output">
+                <section class="output__screen" id="output">0000</section>
+            </div>
+
+            <div class="container">
+
+                <!-- RADIO -->
+
+                <input type="radio" name="menu" id="selecting"   class="radio radio--1" checked>
+                <input type="radio" name="menu" id="guide"     class="radio radio--2">
+                <input type="radio" name="menu" id="about"       class="radio radio--3">
+
+                <!-- LABELS -->
+
+                <div class="toggle-menu">
+ 
+                    <label for="selecting"   class="toggle-menu__label toggle-menu__label--1">plugins</label>
+                    <label for="guide"     class="toggle-menu__label toggle-menu__label--2">Guide</label>
+                    <label for="about"       class="toggle-menu__label toggle-menu__label--3">about</label>
+
+                </div>
+
+                
+
+                <!-- SELECTING METHOD -->
+
+                <div class="selecting" id="select">
+
+                    <!-- UPPERCASE -->
+
+                    <section class="selecting__uppercase">
+
+                        <!-- CHECKBOX #uppercase -->
+
+                        <input type="checkbox" id="uppercase" class="checkbox_styling">
+
+                        <label for="uppercase" class="selecting__uppercase--label uppercase__label">
+
+                            <span class="uppercase__label--text text-span">uppercase</span>
+                            <span class="uppercase__label--hack hack-span"></span>
+
+                        </label>
+                        
+                    </section>
+
+                    <!-- LOWERCASE -->
+
+                    <section class="selecting__lowercase">
+
+                        <!-- CHECKBOX #lowercase -->
+
+                        <input type="checkbox" id="lowercase" class="checkbox_styling">
+
+                        <label for="lowercase" class="selecting__lowercase--label lowercase__label">
+
+                            <span class="lowercase__label--text text-span">lowercase</span>
+                            <span class="lowercase__label--hack hack-span"></span>
+
+                        </label>
+
+                    </section>
+
+                    <!-- NUMBERS -->
+
+                    <section class="selecting__numbers">
+
+                        <!-- CHECKBOX #numbers -->
+
+                        <input type="checkbox" id="numbers" class="checkbox_styling" checked>
+
+                        <label for="numbers" class="selecting__numbers--label numbers__label">
+
+                            <span class="numbers__label--text text-span">numbers</span>
+                            <span class="numbers__label--hack hack-span"></span>
+
+                        </label>
+
+                    </section>
+
+                    <!-- SYMBOLS -->
+
+                    <section class="selecting__symbols">
+
+                        <!-- CHECKBOX #symbols -->
+
+                        <input type="checkbox" id="symbols" class="checkbox_styling">
+
+                        <label for="symbols" class="selecting__symbols--label symbols__label">
+
+                            <span class="symbols__label--text text-span">symbols</span>
+                            <span class="symbols__label--hack hack-span"></span>
+
+                        </label>
+
+
+                    </section>
+
+                </div>
+
+                <div class="about" id="about">
+
+                    <section class="about__text">
+
+                        developed by <span>Hosam Umbaddi</span> for purpose of practicing <br>
+                        copyright 2022&copy; all rights reserved. <br> 
+                        <br>
+                        not all the features are working.
+                        <br>
+                        your feedback is needed of course.
+ 
+                    </section>
+                    
+                </div>
+
+                <div class="guide" id="guide">
+
+                    <section class="guide__text">
+
+                        This is a random password generator. 
+                        <br>
+                        <br>
+                        You can select to include symbols, numbers, uppercase and lowercase <br>
+                        but that is not available now, maybe later.
+                        <br>
+                        and again, this only for purpose of practicing, nothing is really cool here :)
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <input type="button" value="Generate" class="btn btn--blue" id="btn-generate">
+
+        </div>
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
